@@ -22,12 +22,14 @@
   },
   "binary": {
     "module_name": "node-raw-socket",
+    "module_path" : "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
     "remote_path": "./colthreepv/{module_name}/releases/download/{version}/",
     "package_name": "{platform}-{arch}-{node_abi}_binding.node",
     "host": "https://github.com"
   },
   "scripts": {
-    "preinstall" : "npm install node-pre-gyp"
+    "preinstall" : "npm install node-pre-gyp",
+    "install": "node-pre-gyp install --fallback-to-build"
   },
   "keywords": [
     "checksum",
