@@ -21,10 +21,10 @@
     "url": "git://github.com/stephenwvickers/node-raw-socket.git"
   },
   "binary": {
-    "module_name": "node-raw-socket",
+    "module_name": "raw",
     "module_path" : "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
     "remote_path": "./colthreepv/{module_name}/releases/download/{version}/",
-    "package_name": "{platform}-{arch}-{node_abi}_binding.node",
+    "package_name": "{platform}-{arch}-{node_abi}_binding.tar.gz",
     "host": "https://github.com"
   },
   "scripts": {

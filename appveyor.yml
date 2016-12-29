@@ -39,8 +39,7 @@
     - node --version
     - npm --version
     - npm install --build-from-source --msvs_version=2013
-    - move c:\node-raw-socket\build\Release\raw.node c:\node-raw-socket\win32-x64-node-v48_binding.node
-    - 7z -ttar a dummy c:\node-raw-socket\win32-x64-node-v48_binding.node -so | 7z -si -tgzip a win32-x64-node-v48_binding.tar.gz
+    - 7z -ttar a dummy c:\node-raw-socket\build\* -so | 7z -si -tgzip a win32-x64-node-v48_binding.tar.gz
  
   artifacts:
     - path: win32-x64-node-v48_binding.tar.gz
