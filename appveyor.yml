@@ -12,7 +12,7 @@
   configuration: development
 
   platform:
-    - x86
+    - x64
 
   version: "{build}"
 

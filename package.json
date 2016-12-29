@@ -7,17 +7,27 @@
     "example": "example"
   },
   "dependencies": {
-    "nan": "2.3.*"
+    "nan": "2.3.*",
+    "node-pre-gyp": "^0.6.32"
   },
-  "contributors": [ 
+  "contributors": [
     {
       "name": "Stephen Vickers",
       "email": "stephen.vickers.sv@gmail.com"
-    } 
+    }
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/stephenwvickers/node-raw-socket.git"
+  },
+  "binary": {
+    "module_name": "node-raw-socket",
+    "remote_path": "./colthreepv/{module_name}/releases/download/{version}/",
+    "package_name": "{platform}-{arch}-{node_abi}_binding.node",
+    "host": "https://github.com"
+  },
+  "scripts": {
+    "preinstall" : "npm install node-pre-gyp"
   },
   "keywords": [
     "checksum",
